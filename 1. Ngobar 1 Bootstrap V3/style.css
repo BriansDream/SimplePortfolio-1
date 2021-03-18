@@ -54,9 +54,61 @@ footer {
 
 body {
     margin-bottom: 50px;
+    position: relative;
 }
 
 footer a {
     text-decoration: none;
     color: white;
+}
+
+.thumbnail img {
+    height: 200px;
+}
+
+
+
+/* Membuat Lightbox  */
+.overlay {
+    background-color: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    z-index: 1;
+    text-align: center;
+
+}
+
+.overlay:target {
+    transition: all 2s;
+    opacity: 1;
+    width: auto;
+    height: auto;
+
+}
+
+.overlay img {
+    max-height: 100%;
+    margin: 100px;
+    padding: 50px;
+
+}
+
+.overlay .tutup {
+    position: absolute;
+    top: -50px;
+    left: 43%;
+}
+
+
+@media screen and (max-width : 768px) {
+    .thumbnail img {
+        height: auto;
+    }
 }
