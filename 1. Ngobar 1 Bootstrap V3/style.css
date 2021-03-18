@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+html {
+    position: relative;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
 }
@@ -35,6 +39,24 @@ section {
 }
 
 footer {
-    padding: 10px;
-    margin-top: 10px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: rgb(133, 133, 133);
+    height: 50px;
+    font-size: 1.8rem;
+    padding-top: 10px;
+}
+
+.contact {
+    min-height: 800px;
+}
+
+body {
+    margin-bottom: 50px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
 }
