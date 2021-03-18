@@ -43,9 +43,9 @@ footer {
     width: 100%;
     bottom: 0;
     background-color: rgb(133, 133, 133);
-    height: 50px;
+    height: 100px;
     font-size: 1.8rem;
-    padding-top: 10px;
+    padding-top: 15px;
 }
 
 .contact {
@@ -53,7 +53,7 @@ footer {
 }
 
 body {
-    margin-bottom: 50px;
+
     position: relative;
 }
 
@@ -63,7 +63,7 @@ footer a {
 }
 
 .thumbnail img {
-    height: 200px;
+    height: 300px;
 }
 
 
@@ -97,18 +97,51 @@ footer a {
     max-height: 100%;
     margin: 100px;
     padding: 50px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 
 }
 
 .overlay .tutup {
     position: absolute;
     top: -50px;
-    left: 43%;
+    left: 41%;
 }
+
+.overlay .mundur {
+    position: absolute;
+    margin-left: -100px;
+    top: 20%;
+}
+
+.overlay .maju {
+    position: absolute;
+    margin-left: -265px;
+    top: 20%;
+}
+
+
 
 
 @media screen and (max-width : 768px) {
     .thumbnail img {
         height: auto;
+    }
+
+}
+
+@media screen and (max-width : 992px) {
+
+    .overlay {
+
+        display: none;
+    }
+}
+
+
+@media screen and (max-width : 1200px) {
+
+    .overlay .tutup {
+        left: 36%;
+
     }
 }
