@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+html {
+    position: relative;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 30px;
+}
+
+.jumbotron img {
+    max-height: 300px;
+    border: 3px solid white;
+
+
+}
+
+.jumbotron {
+    background-image: url("1.jpg");
+    border-radius: 3px;
+    object-fit: cover;
+    object-position: top;
+    background-repeat: repeat no-repeat;
+    max-height: 100%;
+}
+
+.jumbotron h1,
+p {
+    color: white;
+}
+
+hr {
+    width: 250px;
+    border-top: 4px solid black;
+}
+
+section {
+    min-height: 600px;
+}
+
+.portfolio {
+    background-color: #eee;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: rgb(133, 133, 133);
+    height: 50px;
+    font-size: 1.8rem;
+    padding-top: 15px;
+}
+
+.contact {
+    min-height: 800px;
+}
+
+body {
+
+    position: relative;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.thumbnail img {
+    height: 300px;
+}
+
+
+
+/* Membuat Lightbox  */
+.overlay {
+    background-color: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    z-index: 1;
+    text-align: center;
+
+}
+
+.overlay:target {
+    transition: all 2s;
+    opacity: 1;
+    width: auto;
+    height: auto;
+
+}
+
+.overlay img {
+    max-height: 100%;
+    margin: 100px;
+    padding: 50px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+.overlay .tutup {
+    position: absolute;
+    top: -50px;
+    left: 41%;
+}
+
+.overlay .mundur {
+    position: absolute;
+    margin-left: -100px;
+    top: 20%;
+}
+
+.overlay .maju {
+    position: absolute;
+    margin-left: -265px;
+    top: 20%;
+}
+
+
+
+
+@media screen and (max-width : 768px) {
+    .thumbnail img {
+        height: auto;
+    }
+
+}
+
+@media screen and (max-width : 992px) {
+
+    .overlay {
+
+        display: none;
+    }
+}
+
+
+@media screen and (max-width : 1200px) {
+
+    .overlay .tutup {
+        left: 36%;
+
+    }
+}
