@@ -20,10 +20,61 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
+<!-- Navbar -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            <a href="#home" class="navbar-brand" class="page-scroll">
+                Brians Dream
+            </a>    
+        </div>
+
+        <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="" >
+                    <a href="#home" class="page-scroll" >
+                        Home
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#about"  class="page-scroll">
+                        About
+                    </a>
+                </li>
+
+                <li class="">
+                    <a href="#portfolio" class="page-scroll">
+                        Portfolio
+                    </a>
+
+                </li>
+                <li class="">
+                    <a href="#contact" class="page-scroll">
+                        Contact
+                    </a>
+
+                </li>
+
+    
+    
+    </div>
+        </nav>
+
+
+
+<!-- Akhir Navbar -->
+
+
       <!-- Awal Jumbotron -->
   
-    <div class="jumbotron text-center" >
-         <img src="pp.jpg" alt="" class="img-circle">
+    <div class="jumbotron text-center" id="home">
+         <img src="3.jpg" alt="" class="img-circle">
         <h1>Brian's Dream</h1>
         <p>Web Developer | Graphic Designer</p>
       </div>      <!-- Akhir Jumbotron -->
@@ -31,7 +82,7 @@
 
       <!-- Awal About -->
 
-      <section class="about" id="about">
+      <section class="about"  id="about">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 text-center"> 
@@ -41,11 +92,15 @@
             </div>
 
             <div class="row ">
-                <div class="col-sm-5 col-sm-offset-1">
+                <div class="col-sm-5 col-sm-offset-1 pKiri">
+                
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore voluptatum illo vitae blanditiis aspernatur earum officia numquam perspiciatis fuga cum recusandae iusto maxime fugit, debitis quos delectus, provident impedit accusantium.
+              
                 </div>
-                <div class="col-sm-5 ">
+                <div class="col-sm-5 pKanan">
+                  
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore voluptatum illo vitae blanditiis aspernatur earum officia numquam perspiciatis fuga cum recusandae iusto maxime fugit, debitis quos delectus, provident impedit accusantium.
+           
                 </div>
                 
 
@@ -195,12 +250,12 @@
                 </div>
 
                 <div class="col-sm-4">
-                    <a href="" class="thumbnail">
+                    <a href="#gambar6" class="thumbnail">
                     <img src="5.jpg" alt="" >
                 </a>
 
                 <div class="overlay" id="gambar6">
-                    <a href="#gambar6" class="tutup">
+                    <a href="#" class="tutup">
                         
                         <img src="close.png" alt="" >
                     </a>
@@ -290,10 +345,16 @@
     </div>
     </div>
     </footer>
-  
+
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
+        <script src="script2.js">
+
+        </script>
+  
   </body>
 </html>

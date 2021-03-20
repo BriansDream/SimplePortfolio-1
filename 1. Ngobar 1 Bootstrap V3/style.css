@@ -6,18 +6,25 @@ html {
 
 body {
     font-family: 'Montserrat', sans-serif;
+    margin-top: 30px;
 }
 
 .jumbotron img {
-    max-height: 300px;
+
     border: 3px solid white;
 
 
 }
 
 .jumbotron {
-    background-image: url("mathbg.jpg");
+    background-image: url("1.jpg");
     border-radius: 3px;
+    background-size: cover;
+    background-position: center;
+    max-height: 100%;
+    background-attachment: fixed;
+    box-shadow: rgba(0, 0, 0, 0.2);
+    overflow: hidden;
 }
 
 .jumbotron h1,
@@ -43,7 +50,7 @@ footer {
     width: 100%;
     bottom: 0;
     background-color: rgb(133, 133, 133);
-    height: 100px;
+    height: 50px;
     font-size: 1.8rem;
     padding-top: 15px;
 }
@@ -83,6 +90,8 @@ footer a {
     z-index: 1;
     text-align: center;
 
+
+
 }
 
 .overlay:target {
@@ -119,8 +128,46 @@ footer a {
     top: 20%;
 }
 
+/* Landing element efek parallax */
 
 
+
+
+.portfolio .thumbnail {
+    opacity: 0;
+    transition: all 1s;
+}
+
+.portfolio .thumbnail.landing {
+
+    opacity: 1;
+}
+
+/* Akhir landing element */
+/* About Parallax */
+
+.about .pKiri {
+    opacity: 0;
+    transition: all 1s;
+    transform: translate(-100px, 0);
+
+}
+
+.pKanan {
+    opacity: 0;
+    transition: all 1s;
+    transform: translate(100px, 0);
+
+}
+
+.pKiri.pMuncul,
+.pKanan.pMuncul {
+    opacity: 1;
+    transform: translate(0, 0);
+
+}
+
+/* Akhir about parallax */
 
 @media screen and (max-width : 768px) {
     .thumbnail img {
