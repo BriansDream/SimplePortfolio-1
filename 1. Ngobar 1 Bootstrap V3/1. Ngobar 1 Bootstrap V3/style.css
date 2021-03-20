@@ -10,7 +10,7 @@ body {
 }
 
 .jumbotron img {
-
+    max-height: 300px;
     border: 3px solid white;
 
 
@@ -19,12 +19,10 @@ body {
 .jumbotron {
     background-image: url("1.jpg");
     border-radius: 3px;
-    background-size: cover;
-    background-position: center;
+    object-fit: cover;
+    object-position: top;
+    background-repeat: repeat no-repeat;
     max-height: 100%;
-    background-attachment: fixed;
-    box-shadow: rgba(0, 0, 0, 0.2);
-    overflow: hidden;
 }
 
 .jumbotron h1,
@@ -90,8 +88,6 @@ footer a {
     z-index: 1;
     text-align: center;
 
-
-
 }
 
 .overlay:target {
@@ -128,46 +124,8 @@ footer a {
     top: 20%;
 }
 
-/* Landing element efek parallax */
 
 
-
-
-.portfolio .thumbnail {
-    opacity: 0;
-    transition: all 1s;
-}
-
-.portfolio .thumbnail.landing {
-
-    opacity: 1;
-}
-
-/* Akhir landing element */
-/* About Parallax */
-
-.about .pKiri {
-    opacity: 0;
-    transition: all 1s;
-    transform: translate(-100px, 0);
-
-}
-
-.pKanan {
-    opacity: 0;
-    transition: all 1s;
-    transform: translate(100px, 0);
-
-}
-
-.pKiri.pMuncul,
-.pKanan.pMuncul {
-    opacity: 1;
-    transform: translate(0, 0);
-
-}
-
-/* Akhir about parallax */
 
 @media screen and (max-width : 768px) {
     .thumbnail img {
